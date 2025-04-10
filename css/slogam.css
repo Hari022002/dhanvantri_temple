@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color:  #a6162c;
+    color: #f8cf3c;
+}
+h5{
+    color: #f8cf3c;
+}
+.slogams{
+    margin: 40px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #a6162c;
+    border-radius: 15px;
+  }
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header h3{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    padding: 10px;
+    
+}
+.container_1{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #a6162c;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.container_2{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #a6162c;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.pagination {
+    margin: 20px;
+    text-align: center;
+}
+.pagination button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+a{
+    color: #f8cf3c;
+}

@@ -1,0 +1,161 @@
+.histroy_header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6a4c93;
+    margin: 20px;
+}
+
+.dhavantri_history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #a6162c;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+
+}
+
+.dhavantri_image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.dhavantri_image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.histroy_content {
+    flex: 2;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .dhavantri_history {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .histroy_content {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.histroy_header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6a4c93;
+    margin: 20px;
+}
+
+.ganesha_history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 10px;
+    background-color:  #a6162c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+.ganesha_image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.ganesha_image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.histroy_content {
+    flex: 2;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .ganesha_history {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .histroy_content {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.histroy_header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8cf3c;
+    margin: 20px;
+}
+
+.murugar_history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #a6162c;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+.murugar_image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.murugar_image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.histroy_content {
+    flex: 2;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #f8cf3c;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .murugar_history {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .histroy_content {
+        text-align: center;
+        padding-top: 20px;
+    }
+}

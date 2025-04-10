@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico" type="image/png">
+    <title>Dhanvantri</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        .slide-container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 25px 0;
+        }
+
+        .slide-content {
+            padding: 0 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background: #a5001a;
+            color: #fff;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-body .date {
+            font-size: 14px;
+            color: #fdd835;
+            font-weight: 400;
+        }
+
+        .card-body .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffeb3b;
+        }
+
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a5001a;
+        }
+
+        .swiper-pagination-bullet {
+            background: #a5001a;
+        }
+
+        @media (max-width: 768px) {
+            .slide-content {
+                padding: 0 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo_1">
+                <a href="./index.html"><img src="./images/dhanvantri_logo.png" alt="clg_logo"></a>
+            </div>
+            <div class="name">
+                <span>SREE DHANVANTRI MANDHIR</span>
+            </div>
+            <div class="logo_1">
+                <a href="./index.html"><img src="./images/pngtree.png" alt="clg_logo"></a>
+            </div>
+            <!-- <div class="quote">
+                <span><i>May the blessings <br>of Dhanvantri bring you <br> peace and well-being.</i></span>
+            </div> -->
+        </div>
+        <div class="navbar">
+            <nav class="menu">
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <ul>
+                    <li><img src="./images/design.png"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <!-- <li><a href="#news-events">Events</a></li> -->
+                    <li><a href="./offerings.html">Offerings</a></li>
+                    <li><a href="./slogam.html">Slogam</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><img src="./images/design.png"></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="carousel">
+            <div class="carousel_inner">
+                <div class="slide active">
+                    <img src="./images/image_5.png" alt="image_1">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_1.1.JPG" alt="image_2">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_2.JPG" alt="image_2">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_3.JPG" alt="image_3">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_4.JPG" alt="image_4">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_1.JPG" alt="image_5">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_8.JPG" alt="image_6">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_9.JPG" alt="image_7">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_10.JPG" alt="image_8">
+                </div>
+                <div class="slide">
+                    <img src="./images/image_11.JPG" alt="image_9">
+                </div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="heading">
+            <span style="font-size: 25px;"><i>QUOTES OF DHANVANTRI</i>
+            </span><br>
+            <img style="height: 60px;" src="./images/heading_design.png">
+
+        </div>
+        <div class="info">
+            <div class="info_image">
+                <img src="./images/image_6.JPG" alt="info_image">
+            </div>
+            <div class="info_content">
+                <div class="info_1">
+                    <img src="./images/healing.png">
+                    <p> Aligning the body’s energy centers (chakras) through meditation, sound therapy, or crystals for
+                        holistic healing.</p>
+                </div>
+                <div class="info_2">
+                    <img src="./images/herbal.png">
+
+                    <p>An ancient Indian system of medicine that relies on herbs, diet, and holistic practices for
+                        well-being.</p>
+                </div>
+                <div class="info_3">
+                    <img src="./images/pills.png">
+
+                    <p>Pills can represent a journey of change, whether physical, mental, or spiritual, much like a
+                        personal awakening.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="quote-container">
+            <img src="./images/image_7.JPG" alt="Dhanvantri Image" class="quote-image">
+            <div class="overlay"></div>
+            <div class="quote-content">
+                <h3>DHANVANTRI</h3>
+                <strong>
+                    <i>"Om Namo Bhagavate Vasudevaaya<br> Dhanvantaraye Amrutha-Kalasa-Hasthaaya<br>
+                        Sarvaamaya-Vinaashanaaya Tri-Lokya-Naathaaya<br>Shri Mahaavishnave Namaha"<br></i>
+                </strong>
+            </div>
+        </div>
+
+        <div class="vision">
+            <div class="heading">
+                <span style="font-size: 25px;"><i>SYMBOLS OF DHANVANTRI</i>
+                </span>
+                <br>
+                <img style="height: 60px;" src="./images/heading_design.png">
+
+            </div>
+
+        </div>
+        <div class="container_1">
+            <div class="bubble_container">
+                <div class="bubble">
+                    <h3>Amrita</h3>
+                    <p>The elixir of immortality</p>
+                </div>
+                <div class="bubble">
+                    <h3>Conch shell (shankha)</h3>
+                    <p>A sacred symbol of Ayurveda</p>
+                </div>
+                <div class="bubble">
+                    <h3>Leech (jalauka)</h3>
+                    <p>Symbolizes the historical practice of bloodletting</p>
+                </div>
+                <div class="bubble">
+                    <h3>Pot of nectar</h3>
+                    <p>A symbol of Dhanvantri</p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="center-image">
+                    <img src="./images/image_6.JPG" alt="Spiritual Image">
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <span style="font-size: 25px;"><i>NEWS & EVENTS</i>
+            </span>
+            <br>
+            <img style="height: 60px;" src="./images/heading_design.png">
+        </div>
+        <!-- <div class="card_slider">
+            <div class="card_container">
+                <div class="card">
+                    <img src="./images/image_10.jpg" alt="Buddha Celebration">
+                    <div class="card-content">
+                        <p class="date">February 23, 2025</p>
+                        <h4>Pancha Maha Deivega Thirukkalyana Mahotsavam</h4>
+                        <p>A divine wedding ceremony of five major deities, bringing blessings for harmony, peace, and spiritual upliftment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/image_4.JPG" alt="Ceremony">
+                    <div class="card-content">
+                        <p class="date">March 15, 2025</p>
+                        <h4>Ayurveda Healing Festival</h4>
+                        <p>A grand celebration of Ayurveda with expert consultations, wellness workshops, and traditional healing rituals.</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./images/image_3.JPG" alt="Lotus Celebration">
+                    <div class="card-content">
+                        <p class="date">April 10, 2025</p>
+                        <h4>Dhanvantri Homam & Special Pooja</h4>
+                        <p>A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and well-being, followed by an elaborate pooja.</p>
+                    </div>
+                </div>
+        
+               
+       
+            </div>
+        </div>
+         -->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide card">
+                        <img src="./images/image_1.JPG" alt="Festival 1">
+                        <div class="card-body">
+                            <div class="date">February 23, 2025</div>
+                            <div class="title">Pancha Maha Deivega Thirukkalyana Mahotsavam</div>
+                            <!-- <div class="desc">A divine wedding ceremony of five major deities, bringing blessings for
+                                harmony, peace, and spiritual upliftment.</div> -->
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide card">
+                        <img src="./images/image_1.1.JPG" alt="Festival 3">
+                        <div class="card-body">
+                            <div class="date">April 11,15 2025</div>
+                            <div class="title">Panguni Utthiram, Tamil New Year special
+                                pujas.</div>
+                            <!-- <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                                well-being, followed by an elaborate pooja.April 11, Friday – Panguni Uthiram
+                                Special Abhishekam and Pooja for Lord Muruga with Valli and Deivanai
+                                April 14, Monday – Tamil New Year / Chithirai Vishu Kani</div> -->
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide card">
+                        <img src="./images/image_2.JPG" alt="Festival 3">
+                        <div class="card-body">
+                            <div class="date">April 10, 2025</div>
+                            <div class="title">Dhanvantri Homam & Special Pooja</div>
+                            <!-- <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                                well-being, followed by an elaborate pooja.</div> -->
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="swiper-slide card">
+                        <img src="./images/image_3.JPG" alt="Festival 3">
+                        <div class="card-body">
+                            <div class="date">April 10, 2025</div>
+                            <div class="title">Dhanvantri Homam & Special Pooja</div>
+                            <!-- <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                                well-being, followed by an elaborate pooja.</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="footer">
+            <div class="sections">
+                <div class="about_us">
+                    <span style="color: #e69833;"><strong>Opening Hours</strong></span>
+                    <br>
+                    <span>Morning : 06:00AM TO 12:00PM</span>
+                    <br>
+                    <span>Evening : 04:00PM TO 08:00PM</span>
+                </div>
+                <div class="links">
+                    <img src="./images/dhanvantri_logo.png" alt="Dhanvantri Logo">
+                </div>
+                <div class="facility">
+                    <span style="color: #e69833;"><strong>Find Us</strong></span>
+                    <br>
+                    <span>Near Adhiyamaan College of Engineering</span>
+                    <br>
+                    <span>Kumudepalli</span>
+                    <br>
+                    <span>Hosur</span>
+                    <br>
+                    <span>TN 635109</span>
+                    <br>
+                    <span>India</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="fotter_content">
+            &copy; 2025. All Rights Reserved.
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+        const carouselInner = document.querySelector(".carousel_inner");
+        let slideInterval;
+
+        function moveSlide(direction) {
+            currentIndex += direction;
+
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+                carouselInner.style.transition = 'none';
+                updateSlidePosition();
+                carouselInner.offsetHeight;
+                carouselInner.style.transition = 'transform 1s linear';
+            } else if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+                carouselInner.style.transition = 'none';
+                updateSlidePosition();
+                carouselInner.offsetHeight;
+                carouselInner.style.transition = 'transform 1s linear';
+            }
+
+            updateSlidePosition();
+        }
+
+        function updateSlidePosition() {
+            const offset = currentIndex * 100;
+            carouselInner.style.transform = `translateX(-${offset}%)`;
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+        }
+
+        slideInterval = setInterval(autoSlide, 6000);
+
+        const carousel = document.querySelector(".carousel");
+
+        document.querySelector(".prev").addEventListener("click", () => {
+            clearInterval(slideInterval);
+            moveSlide(-1);
+        });
+        document.querySelector(".next").addEventListener("click", () => {
+            clearInterval(slideInterval);
+            moveSlide(1);
+        });
+
+        updateSlidePosition();
+    });
+    function toggleMenu() {
+        document.querySelector(".menu ul").classList.toggle("active");
+    }
+
+
+</script>
+
+</html>

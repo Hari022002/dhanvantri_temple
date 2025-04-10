@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Card Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .slide-container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .slide-content {
+            padding: 0 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background: #a5001a;
+            color: #fff;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-body .date {
+            font-size: 14px;
+            color: #fdd835;
+            font-weight: 400;
+        }
+
+        .card-body .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffeb3b;
+        }
+
+        .card-body .desc {
+            font-size: 14px;
+            font-weight: 300;
+            color: #ffe;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a5001a;
+        }
+
+        .swiper-pagination-bullet {
+            background: #a5001a;
+        }
+
+        @media (max-width: 768px) {
+            .slide-content {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="swiper-wrapper">
+
+                <!-- Card 1 -->
+                <div class="swiper-slide card">
+                    <img src="./images/image_1.JPG" alt="Festival 1">
+                    <div class="card-body">
+                        <div class="date">February 23, 2025</div>
+                        <div class="title">Pancha Maha Deivega Thirukkalyana Mahotsavam</div>
+                        <div class="desc">A divine wedding ceremony of five major deities, bringing blessings for
+                            harmony, peace, and spiritual upliftment.</div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide card">
+                    <img src="./images/image_1.1.JPG" alt="Festival 3">
+                    <div class="card-body">
+                        <div class="date">April 10, 2025</div>
+                        <div class="title">Dhanvantri Homam & Special Pooja</div>
+                        <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                            well-being, followed by an elaborate pooja.</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide card">
+                    <img src="./images/image_2.JPG" alt="Festival 3">
+                    <div class="card-body">
+                        <div class="date">April 10, 2025</div>
+                        <div class="title">Dhanvantri Homam & Special Pooja</div>
+                        <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                            well-being, followed by an elaborate pooja.</div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="swiper-slide card">
+                    <img src="./images/image_3.JPG" alt="Festival 3">
+                    <div class="card-body">
+                        <div class="date">April 10, 2025</div>
+                        <div class="title">Dhanvantri Homam & Special Pooja</div>
+                        <div class="desc">A powerful Homam dedicated to Lord Dhanvantri for health, prosperity, and
+                            well-being, followed by an elaborate pooja.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
