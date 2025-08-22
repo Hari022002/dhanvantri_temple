@@ -8,9 +8,10 @@
     <title>Dhanvantri</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slogam.css">
-    
-    
-   
+    <script src="music.js" defer></script>
+
+
+
 </head>
 
 <body>
@@ -50,7 +51,7 @@
             <span style="font-size: 25px;"><i>12 POWERFULL NAMES OF LORD VISHNU</i>
             </span>
             <br>
-            <img  style="height: 60px;" src="./images/heading_design.png">
+            <img style="height: 60px;" src="./images/heading_design.png">
         </div>
         <div class="container_1">
             <table>
@@ -161,14 +162,15 @@
                 </tbody>
             </table>
         </div>
-        
+
         <div class="conntainer_2">
-            <div class="heading" >
-                <span style="font-size: 25px;"><i>108 Names Of Lord Vishnu<br> Shri Vishnu Ashtottara Shatanamavali With Mantras And
-                    Meanings</i>
+            <div class="heading">
+                <span style="font-size: 25px;"><i>108 Names Of Lord Vishnu<br> Shri Vishnu Ashtottara Shatanamavali With
+                        Mantras And
+                        Meanings</i>
                 </span>
                 <br>
-                <img  style="height: 60px;" src="./images/heading_design.png">
+                <img style="height: 60px;" src="./images/heading_design.png">
             </div>
             <div class="slogams" style="margin: 40px;border: 1px solid #ddd; border-radius: 10px;">
                 <table id="data-table">
@@ -188,9 +190,9 @@
                         <a href="javascript:void(0);" onclick="nextPage()">Next</a>
                     </div>
                 </div>
-                
+
                 <script>
-                     const data = [
+                    const data = [
                         ["1. Govinda", "ஓம் கோவிந்தாய நம:<br>Om Govindaya Namah<br>ఓం గోవిందాయ నమః<br>ഓം ഗോവിന്ദായ നമഃ", "The one who pleases cows and nature"],
                         ["2. Brahmajanaka", "ஓம் பிரம்மஜனகாய நம:<br>Om Brahmajanakaya Namah<br>ఓం బ్రహ్మజనకాయ నమః<br>ഓം 브ஹ்மஜன카야 நமஃ", "The one who produced Lord Brahma"],
                         ["3. Kaitabhasuramardana", "ஓம் கைடபாஸுரமர்தனாய நம:<br>Om Kaitabhasuramardanaya Namah<br>ఓం కైటభాసురమర్దనాయ నమః<br>ഓം കൈറ്റഭാസുരമർദനായ നமഃ", "The one who killed Kaitabh Asur"],
@@ -303,14 +305,14 @@
 
                     const rowsPerPage = 5;
                     let currentPage = 1;
-            
+
                     function displayPage(page) {
                         const start = (page - 1) * rowsPerPage;
                         const end = start + rowsPerPage;
                         const paginatedData = data.slice(start, end);
                         const tableBody = document.querySelector("#data-table tbody");
                         tableBody.innerHTML = "";
-            
+
                         paginatedData.forEach(row => {
                             const tr = document.createElement("tr");
                             row.forEach(cell => {
@@ -320,28 +322,31 @@
                             });
                             tableBody.appendChild(tr);
                         });
-                        
+
                         document.getElementById("page-info").textContent = `Page ${page} of ${Math.ceil(data.length / rowsPerPage)}`;
                     }
-            
+
                     function nextPage() {
                         if (currentPage < Math.ceil(data.length / rowsPerPage)) {
                             currentPage++;
                             displayPage(currentPage);
                         }
                     }
-            
+
                     function prevPage() {
                         if (currentPage > 1) {
                             currentPage--;
                             displayPage(currentPage);
                         }
                     }
-            
+
                     displayPage(currentPage);
-                </script>            </div>
+                </script>
+            </div>
+            <div id="music-player-container"></div>
+
         </div>
-        
+
         <div class="footer">
             <div class="sections">
                 <div class="about_us">

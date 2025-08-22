@@ -496,3 +496,25 @@ button:hover {
     padding: 10px;
     font-weight: bold;
 }
+/* ------------------------------------------------------ */
+.music-toggle {
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  z-index: 9999;
+}
+
+#music-btn {
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#music-btn:hover {
+  background-color: #f0f0f0;
+}
