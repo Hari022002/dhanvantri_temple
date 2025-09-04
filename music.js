@@ -1,4 +1,4 @@
-const playlist = ["./audio/audio_1.mp3", "./audio/audio_2.mp3","./audio/audio_3.mp3"];
+const playlist = ["./audio/audio_1.mp3"];
 let currentTrack = parseInt(localStorage.getItem("track") || "0");
 let currentTime = parseFloat(localStorage.getItem("time") || "0");
 let isPlaying = localStorage.getItem("isPlaying") !== "false";
